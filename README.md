@@ -9,17 +9,32 @@ Installation
 
 This site requires the following dependencies:
 
+- [Local WP](https://localwp.com/)
 - [Node.js](https://nodejs.org/)
 - [Composer](https://getcomposer.org/)
+- A [Flywheel](https://getflywheel.com/) Account
+- A [GitHub](https://github.com/) Account
 
 ### Setup
 
-To start using all the tools that come with this theme  you need to install the necessary Node.js and Composer dependencies :
+To fully set the site up locally, follow these steps:
 
-```sh
-$ composer install
-$ npm install
-```
+1. Download Local WP, this the tool we use to push and pull information to and from production servers.
+2. Ask [Byron Delpinal](mailto:byronddelpinal@gmail.com) to add you as a collaborator on Flywheel, our hosting providor. This will allow you to authenticate for pulling / pushing content.
+3. Authenticate with Flywheel from your Local WP instance and do a full "Local Pull" of the site. This will get the site exactly where it is today on your local machine.
+
+This should put you in a place to launch the site locally using the Local WP tool. To edit any of the site's assets locally, you need to use your terminal and navigate to the site's TB theme folder and do the following:
+
+1. Run `composer install` to install the PHP dependencies
+2. Run `npm install` to install the JS dependencies
+
+After that, you can run `npm run start` in the theme root, this will watch the files for changes and re-build the site when it sees them.
+
+### Contributing Workflow
+Since we will have a few people changing the site, we need to ensure that we're working in a way that will prevent us from stepping on each other's toes. To do that, we have some rules:
+
+1. Content changes are made in production and pulled locally. Never *ever* push the databse from your local machine to production. You can make content and DB changes locally to test things out, of course, but you must then duplicate those changes on production and overwrite your local the next time you pull.
+2. Code changes are pushed to production from your local, and always stored in Git. This will ensure that we can always checkout the latest changes, build them, and push them to production without causing an issue.
 
 ### Available CLI commands
 
