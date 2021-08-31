@@ -1,14 +1,21 @@
 .site-header {
     align-items: center;
+    box-shadow: 2px 2px 2px $color-primary-dark;
     display: flex;
     justify-content: space-between;
-    padding: $spacing-xsmall $spacing-medium;
+    padding: $spacing-small calc((100vw - #{$max-page-width}) / 2);
+    position: sticky;
 }
 
 .custom-logo-link {
+    background-color: transparent;
     display: block;
-    max-height: 150px;
-    max-width: 150px;
+    max-height: 100px;
+    max-width: 100px;
+
+    &:hover {
+        background-color: transparent;
+    }
 
     & img {
         height: 100%;
@@ -27,18 +34,18 @@
             margin-right: $spacing-small;
 
             & a {
-                background-color: $color-secondary;
-                color: $color-white;
-                
+                background-color: $color-white;
+                color: $color-secondary;
                 padding: $spacing-small $spacing-medium;
                 text-decoration: none;
+                text-transform: uppercase;
 
                 &:last-child {
                     margin-right: 0;
                 }
 
                 &:visited {
-                    color: $color-white;
+                    color: $color-secondary;
                 }
             }
         }

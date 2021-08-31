@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+}
+
+.entry-content > * {
+    /*
+     * After the max page width has been hit, start to add padding to each side of
+     * every direct child in the entry content section equal to the current page size
+     * minus the max page width divided by two
+    */
+    @media (min-width: $max-page-width) {
+        padding-left: calc((100vw - #{$max-page-width}) / 2) !important;
+        padding-right: calc((100vw - #{$max-page-width}) / 2) !important;
+    }
+}
+
+.entry-content > *:first-child {
+    /* 
+     * The first child of the entry content should never have a top margin, regardless
+     * of what the element is. This would put an awkward space between it and the header.
+    */
+    margin-top: 0 !important; 
+}
+
+.wp-block-columns img {
+    /* 
+     * When images are put into columns the width gets changed as the columns grow and shrink.
+     * This makes sure that the height corresponds with it instead of remaining.
+    */
+    height: auto;
+}

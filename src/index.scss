@@ -1,5 +1,11 @@
-@import './styles/_variables.scss';
-@import './styles/wordpress-classes.scss';
+/******** Global ********/
+@import "./styles/variables"; // Variables have to come first
+@import "./styles/reset"; // The reset needs to be second
+@import "./styles/global";
+@import "./styles/typography";
 
-@import './styles/components/header.scss';
-@import './styles/components/site-tagline.scss';
+/******** Components / Blocks ********/
+@import "./styles/components/button";
+@import "./styles/components/header";
+@import "./styles/components/link";
+@import "./styles/components/site-tagline";
