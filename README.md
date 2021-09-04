@@ -35,6 +35,7 @@ Since we will have a few people changing the site, we need to ensure that we're 
 
 1. Content changes are made in production and pulled locally. Never *ever* push the databse from your local machine to production. You can make content and DB changes locally to test things out, of course, but you must then duplicate those changes on production and overwrite your local the next time you pull.
 2. Code changes are pushed to production from your local, and always stored in Git. This will ensure that we can always checkout the latest changes, build them, and push them to production without causing an issue.
+3. Notify the #project-website channel in Slack when changes are made so people know when to update their local repositories.
 
 ### Available CLI commands
 
