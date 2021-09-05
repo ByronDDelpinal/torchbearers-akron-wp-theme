@@ -1,0 +1,47 @@
+.tribe-common {
+    /* Establishing base fonts */
+    & * {
+        font-family: "Roboto Slab", serif !important;
+    }
+
+    /* Calendar cell bottom border on hover */
+    & .tribe-events-calendar-month__day {
+        &:hover {
+            &::after {
+                background-color: $color-secondary !important;
+            }
+        }
+    }
+
+    /* Date numbers in the calendar view */
+    & .tribe-events-calendar-month__day-date-daynum,
+    & .tribe-events-calendar-month__day-date-link {
+        color: $color-primary;
+    }
+
+    /* List, Month, Day selectors on the calendar */
+    & .tribe-events-c-view-selector__list-item {
+        &:hover {
+            background-color: transparent !important;
+            cursor: pointer;
+
+            & span.tribe-events-c-view-selector__list-item-text {
+                color: $color-secondary !important;
+            }
+        }
+
+        & .tribe-events-c-view-selector__list-item-link {
+            &:hover {
+                background-color: transparent !important;
+            }
+
+            &::after {
+                background-color: $color-secondary !important;
+            }
+        }
+
+        & span.tribe-events-c-view-selector__list-item-text {
+            color: $color-primary;
+        }
+    }
+}

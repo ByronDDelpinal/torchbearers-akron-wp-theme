@@ -1,12 +1,33 @@
-.wp-block-button__link {
+@mixin button-visuals {
     background-color: $color-primary;
     border: 1px solid $color-primary;
     color: $color-white;
-    margin: $spacing-medium 0;
 
     &:hover {
         background-color: $color-white;
         color: $color-primary;
         text-decoration: none;
+    }
+}
+
+.wp-block-button__link {
+    @include button-visuals;
+    margin: $spacing-medium 0;
+}
+
+/******** Styling for our events ********/
+.tribe-events-c-top-bar a.tribe-common-c-btn-border-small,
+.tribe-events-c-search button.tribe-common-c-btn,
+.tribe-events-c-ical a.tribe-events-c-ical__link {
+    @include button-visuals;
+
+    & .tribe-common-c-svgicon {
+        color: $color-white;
+    }
+
+    &:hover {
+        & .tribe-common-c-svgicon > path {
+            stroke: $color-primary;
+        }
     }
 }
