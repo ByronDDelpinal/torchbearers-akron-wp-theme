@@ -1,0 +1,36 @@
+.wp-block-cover.diagonal {
+    &::after {
+        background-color: $color-primary;
+        content: "";
+        height: 100%;
+        position: absolute;
+        width: 90%;
+        z-index: 0;
+    }
+
+    & .wp-block-button__link {
+        @include button-visuals-inverted;
+    }
+
+    &-left {
+        & .wp-block-cover__inner-container > * {
+            padding-right: 50%;
+        }
+
+        &::after {
+            clip-path: polygon(0 0, 0 100%, 40% 100%, 80% 0);
+            left: 0;
+        }
+    }
+
+    &-right {
+        & .wp-block-cover__inner-container > * {
+            padding-left: 50%;
+        }
+
+        &::after {
+            clip-path: polygon(60% 0, 100% 0, 100% 100%, 20% 100%);
+            right: 0;
+        }
+    }
+}

@@ -10,6 +10,18 @@
     }
 }
 
+@mixin button-visuals-inverted {
+    background-color: $color-white;
+    border: 1px solid $color-white;
+    color: $color-primary;
+
+    &:hover {
+        background-color: $color-primary;
+        color: $color-white;
+        text-decoration: none;
+    }
+}
+
 .wp-block-button__link {
     @include button-visuals;
     margin: $spacing-medium 0;

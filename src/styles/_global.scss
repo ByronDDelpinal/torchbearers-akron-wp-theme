@@ -28,4 +28,9 @@ body {
      * This makes sure that the height corresponds with it instead of remaining.
     */
     height: auto;
+    margin-bottom: $spacing-small;
+}
+
+.wp-block-columns {
+    margin: $spacing-large 0;
 }
