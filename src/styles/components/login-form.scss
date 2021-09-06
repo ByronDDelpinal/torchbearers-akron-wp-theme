@@ -1,0 +1,21 @@
+div.um.um-login {
+    max-width: 100%;
+    padding: $spacing-small;
+    width: calc(100vw - (#{$spacing-small} * 2));
+
+    @media (min-width: $max-page-width) {
+        width: $max-page-width;
+    }
+
+    & .um-form {
+        width: 100%;
+    }
+
+    & #um-submit-btn {
+        @include button-visuals;
+    }
+
+    & .um-alt {
+        @include button-visuals-inverted;
+    }
+}
