@@ -29,6 +29,7 @@
         }
 
         &::after {
+            background-color: $color-secondary;
             clip-path: polygon(60% 0, 100% 0, 100% 100%, 20% 100%);
             right: 0;
         }

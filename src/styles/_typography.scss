@@ -24,11 +24,15 @@ h2 {
     margin: $spacing-medium 0 $spacing-small 0;
 }
 
-h3,
+h3 {
+    font-size: $fontsize-large;
+    margin: $spacing-medium 0;
+}
+
 h4,
 h5,
 h6 {
-    font-size: $fontsize-large;
+    font-size: $fontsize-medium;
     margin: $spacing-medium 0;
 }
 
@@ -37,5 +41,5 @@ li,
 p {
     color: $color-gray-dark;
     font-size: $fontsize-xsmall;
-    line-height: 1.25;
+    line-height: 1.5;
 }
