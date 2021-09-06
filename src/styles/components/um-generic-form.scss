@@ -1,5 +1,6 @@
 div.um.um-login,
-div.um.um-password {
+div.um.um-password,
+div.um.um-profile {
     max-width: 100%;
     padding: $spacing-small;
     width: calc(100vw - (#{$spacing-small} * 2));
@@ -12,11 +13,18 @@ div.um.um-password {
         width: 100%;
     }
 
+    & input.um-button[type='submit'],
     & #um-submit-btn {
         @include button-visuals;
     }
 
     & .um-alt {
         @include button-visuals-inverted;
+    }
+
+    & .um-profile-headericon a:hover, .um-profile.um .um-profile-edit-a.active {
+        &:hover {
+            color: $color-primary;
+        }
     }
 }

@@ -37,4 +37,18 @@
     & .um-member-metaline strong {
         display: none !important;
     }
+
+    & .um-members-edit-btn > a.um-button {
+        @include button-visuals;
+
+        &::before {
+            color: $color-white;
+        }
+
+        &:hover {
+            &::before {
+                color: $color-primary;
+            }
+        }
+    }
 }
