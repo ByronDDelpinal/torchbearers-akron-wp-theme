@@ -96,6 +96,70 @@ if ( ! function_exists( 'torchbearers_setup' ) ) :
 endif;
 add_action( 'after_setup_theme', 'torchbearers_setup' );
 
+// Adds support for editor color palette.
+add_theme_support( 'editor-color-palette', array(
+	array(
+		'name'  => __( 'Brand Primary', 'torchbearers' ),
+		'slug'  => 'brand-primary',
+		'color'	=> '#a31f34',
+	),
+	array(
+		'name'  => __( 'Brand Primary Light', 'torchbearers' ),
+		'slug'  => 'brand-primary-light',
+		'color' => '#c96f70',
+	),
+	array(
+		'name'  => __( 'Brand Primary Dark', 'torchbearers' ),
+		'slug'  => 'brand-primary-dark',
+		'color' => '#80001c',
+	),
+	array(
+		'name'  => __( 'Brand Secondary', 'torchbearers' ),
+		'slug'  => 'brand-secondary',
+		'color' => '#ff8300',
+    ),
+	array(
+		'name'  => __( 'Brand Secondary Light', 'torchbearers' ),
+		'slug'  => 'brand-secondary-light',
+		'color' => '#ffad61',
+    ),
+	array(
+		'name'  => __( 'Brand Secondary Dark', 'torchbearers' ),
+		'slug'  => 'brand-secondary-dark',
+		'color' => '#e06423',
+    ),
+	array(
+		'name'  => __( 'Brand Tertiary', 'torchbearers' ),
+		'slug'  => 'brand-tertiary',
+		'color' => '#fceac1',
+    ),
+	array(
+		'name'  => __( 'Brand Tertiary Light', 'torchbearers' ),
+		'slug'  => 'brand-tertiary-light',
+		'color' => '#fef4e0',
+    ),
+	array(
+		'name'  => __( 'Brand Tertiary Dark', 'torchbearers' ),
+		'slug'  => 'brand-tertiary-dark',
+		'color' => '#f8e0a4',
+    ),
+	array(
+		'name'  => __( 'Brand Gray', 'torchbearers' ),
+		'slug'  => 'brand-gray',
+		'color' => '#8a8b8c',
+    ),
+	array(
+		'name'  => __( 'Brand Gray Light', 'torchbearers' ),
+		'slug'  => 'brand-gray-light',
+		'color' => '#afb0b0',
+    ),
+	array(
+		'name'  => __( 'Brand Gray Dark', 'torchbearers' ),
+		'slug'  => 'brand-gray-dark',
+		'color' => '#666868',
+    ),
+) );
+
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
  *
