@@ -42,3 +42,54 @@ strong {
 .wp-block-columns {
     margin: $spacing-medium 0;
 }
+
+/******** Brand Color Classes ********/
+.has-brand-primary-color {
+    color: $color-primary;
+}
+
+.has-brand-primary-light-color {
+    color: $color-primary-light;
+}
+
+.has-brand-primary-dark-color {
+    color: $color-primary-dark;
+}
+
+.has-brand-secondary-color {
+    color: $color-secondary;
+}
+
+.has-brand-secondary-light-color {
+    color: $color-secondary-light;
+}
+
+.has-brand-secondary-dark-color {
+    color: $color-secondary-dark;
+}
+
+.has-brand-tertiary-color {
+    color: $color-tertiary;
+}
+
+.has-brand-tertiary-light-color {
+    color: $color-tertiary-light;
+}
+
+.has-brand-tertiary-dark-color {
+    color: $color-tertiary-dark;
+}
+
+.has-brand-gray-color {
+    color: $color-gray;
+}
+
+.has-brand-gray-light-color {
+    color: $color-gray-light;
+}
+
+.has-brand-gray-dark-color {
+    color: $color-gray-dark;
+}
+
+/*/////// Brand Color Classes ///////*/
