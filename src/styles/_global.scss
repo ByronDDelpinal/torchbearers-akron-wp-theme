@@ -2,6 +2,14 @@ body {
     margin: 0;
 }
 
+em {
+    font-style: italic;
+}
+
+strong {
+    font-weight: 700;
+}
+
 .entry-content > * {
     /*
      * After the max page width has been hit, start to add padding to each side of
