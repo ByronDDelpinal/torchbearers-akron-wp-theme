@@ -1,4 +1,5 @@
-div.um.um-login {
+div.um.um-login,
+div.um.um-password {
     max-width: 100%;
     padding: $spacing-small;
     width: calc(100vw - (#{$spacing-small} * 2));
