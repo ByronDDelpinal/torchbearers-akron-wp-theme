@@ -16,6 +16,11 @@ strong {
      * every direct child in the entry content section equal to the current page size
      * minus the max page width divided by two
     */
+    box-sizing: border-box;
+    padding-left: $spacing-small;
+    padding-right: $spacing-small;
+    width: 100%;
+
     @media (min-width: $max-page-width) {
         padding-left: calc((100vw - #{$max-page-width}) / 2) !important;
         padding-right: calc((100vw - #{$max-page-width}) / 2) !important;

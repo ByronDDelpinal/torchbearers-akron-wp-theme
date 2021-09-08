@@ -1,10 +1,12 @@
 .wp-block-cover.diagonal {
+    padding: initial 0;
+
     &::after {
         background-color: $color-primary;
         content: "";
         height: 100%;
         position: absolute;
-        width: 90%;
+        width: 100%;
         z-index: 0;
     }
 
@@ -12,26 +14,53 @@
         @include button-visuals-inverted;
     }
 
+    & .wp-block-cover__inner-container > * {
+        justify-content: center;
+        text-align: center;
+
+        @media (min-width: $breakpoint-width-medium) {
+            justify-content: initial;
+            text-align: initial;
+        }
+    }
+
     &-left {
-        & .wp-block-cover__inner-container > * {
-            padding-right: 50%;
+        &::after {
+            clip-path: polygon(0 0, 0 100%, 100% 0);
+            left: 0;
         }
 
-        &::after {
-            clip-path: polygon(0 0, 0 100%, 40% 100%, 80% 0);
-            left: 0;
+        @media (min-width: $breakpoint-width-medium) {
+            &::after {
+                clip-path: polygon(0 0, 0 100%, 40% 100%, 80% 0);
+            }
+
+            & .wp-block-cover__inner-container > * {
+                padding-right: 50%;
+            }
         }
     }
 
     &-right {
-        & .wp-block-cover__inner-container > * {
-            padding-left: 50%;
-        }
-
         &::after {
             background-color: $color-secondary;
-            clip-path: polygon(60% 0, 100% 0, 100% 100%, 20% 100%);
+            clip-path: polygon(100% 0, 100% 100%, 0 100%);
             right: 0;
+        }
+
+        & a:not(.wp-block-button__link) {
+            color: $color-primary;
+            font-weight: bold;
+        }
+
+        @media (min-width: $breakpoint-width-medium) {
+            &::after {
+                clip-path: polygon(60% 0, 100% 0, 100% 100%, 20% 100%);
+            }
+
+            & .wp-block-cover__inner-container > * {
+                padding-left: 50%;
+            }
         }
     }
 }
