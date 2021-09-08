@@ -1,0 +1,17 @@
+.is-vertically-aligned-bottom > *:last-child {
+    margin-bottom: 0;
+}
+
+.is-vertically-aligned-center {
+    & > *:last-child {
+        margin-bottom: 0;
+    }
+
+    & > *:first-child {
+        margin-top: 0;
+    }
+}
+
+.is-vertically-aligned-top > *:first-child {
+    margin-top: 0;
+}

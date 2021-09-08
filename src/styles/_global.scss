@@ -32,18 +32,27 @@ strong {
      * The first child of the entry content should never have a top margin, regardless
      * of what the element is. This would put an awkward space between it and the header.
     */
-    margin-top: 0 !important; 
+    margin-top: 0 !important;
 }
 
-.wp-block-columns img {
-    /* 
-     * When images are put into columns the width gets changed as the columns grow and shrink.
-     * This makes sure that the height corresponds with it instead of remaining.
-    */
-    height: auto;
-    margin-bottom: $spacing-small;
+.wp-block-columns {
+    & .wp-block-image {
+        margin: 0;
+    }
+
+    & img {
+        /* 
+        * When images are put in the width gets changed as they grow and shrink.
+        * This makes sure that the height corresponds with it instead of remaining.
+        */
+        height: auto;
+    }
 }
 
 .wp-block-columns {
     margin: $spacing-medium 0;
+
+    @media (max-width: $breakpoint-width-small) {
+        text-align: center;
+    }
 }

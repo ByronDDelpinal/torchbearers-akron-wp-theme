@@ -1,0 +1,10 @@
+.entry-content {
+    /*
+     * Remove the first spacer on the page on smaller screens
+    */
+    & .wp-block-spacer:first-child {
+        @media (max-width: $breakpoint-width-medium) {
+            display: none;
+        }
+    }
+}

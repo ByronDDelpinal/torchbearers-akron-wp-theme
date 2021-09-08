@@ -1,0 +1,48 @@
+/*
+ * TBH I'm not very proud of this solution...
+*/
+.tiles {
+    & .wp-block-column {
+        margin: 0;
+
+        @media (max-width: $breakpoint-width-medium) {
+            flex-basis: 100% !important;
+        }
+    }
+
+    & .wp-block-cover {
+        align-items: stretch;
+        display: flex;
+        padding: 0;
+
+        & .wp-block-cover__inner-container {
+            align-items: stretch;
+            display: flex;
+            width: 100%;
+
+            & h3 {
+                align-items: stretch;
+                display: flex;
+                margin: 0;
+                width: 100%;
+
+                & a {
+                    align-items: center;
+                    color: $color-white;
+                    display: flex;
+                    justify-content: center;
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+        }
+
+        &:hover {
+            background-color: $color-primary;
+        }
+    }
+
+    @media (min-width: $max-page-width) {
+
+    }
+}
