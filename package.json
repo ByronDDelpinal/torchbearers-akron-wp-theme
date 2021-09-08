@@ -1,7 +1,7 @@
 {
-  "name": "theme",
+  "name": "torchbearers-theme",
   "version": "1.0.0",
-  "description": "WordPress Theme",
+  "description": "WordPress theme for Torchbearers Akron",
   "scripts": {
     "build": "wp-scripts build",
     "format:js": "wp-scripts format-js",
