@@ -1,3 +1,58 @@
+.um-members-grid {
+    align-items: flex-start !important;
+    border: unset !important;
+    display: flex;
+    height: auto !important;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: unset !important;
+    width: 100%;
+    word-break: unset !important;
+
+    & .um-gutter-sizer {
+        display: none;
+    }
+
+    & .um-member {
+        border: unset !important;
+        display: block !important;
+        flex-basis: 49%;
+        float: unset !important;
+        left: unset !important;
+        margin: $spacing-small 0 !important;
+        position: relative !important;
+        top: unset !important;
+        width: auto !important;
+        word-break: unset !important;
+
+        @media (min-width: $breakpoint-width-small) {
+            flex-basis: 32%;
+        }
+
+        @media (min-width: $breakpoint-width-medium) {
+            flex-basis: 19%;
+        }
+    }
+
+    & .um-member-card ,
+    & .um-member-photo {
+        flex-basis: 100%;
+    }
+
+    & .um-member-meta {
+        margin-top: $spacing-xsmall !important;
+        padding-top: 0 !important;
+    }
+
+    & .um-member-metaline {
+        padding-top: $spacing-xsmall !important;
+    }
+
+    & .um-members-edit-btn {
+        display: none;
+    }
+}
+
 .entry-content .um .um-button {
     @include button-visuals;
     border: 1px solid $color-primary !important;
@@ -26,6 +81,8 @@
 }
 
 .um-members-wrapper {
+    flex-wrap: wrap !important; 
+
     & .um-member {
         margin-top: 1.5rem;
     }
