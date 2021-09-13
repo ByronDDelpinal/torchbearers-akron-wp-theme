@@ -1,16 +1,34 @@
 div.um.um-login,
 div.um.um-password,
-div.um.um-profile {
+div.um.um-profile,
+div.um.um-register {
     max-width: 100%;
     padding: $spacing-small;
     width: calc(100vw - (#{$spacing-small} * 2));
 
     @media (min-width: $max-page-width) {
-        width: $max-page-width;
+        width: 100%;
+    }
+
+    & .um-header {
+        border-width: 0;
     }
 
     & .um-form {
         width: 100%;
+    }
+
+    & .um-profile-body {
+        max-width: 100%;
+    }
+
+    & .um-field-divider {
+        margin-top: $spacing-mediun;
+    }
+
+    & .um-field-block[data-key="um_block_2070_18"] {
+        font-size: $fontsize-small;
+        font-style: italic;
     }
 
     & input.um-button[type='submit'],
@@ -26,5 +44,9 @@ div.um.um-profile {
         &:hover {
             color: $color-primary;
         }
+    }
+
+    & .um-main-meta ~ .um-meta-text {
+        display: none;
     }
 }

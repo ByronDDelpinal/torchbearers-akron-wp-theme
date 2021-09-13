@@ -25,6 +25,45 @@
         width: auto !important;
         word-break: unset !important;
 
+        & .um-member-meta {
+            border-width: 0 !important;
+            margin-top: 0 !important;
+            padding-top: 0 !important;
+        }
+
+        & .um-member-name {
+            margin: 0 !important;
+
+            & a {
+                line-height: 1 !important;
+            }
+        }
+
+        & .um-member-metaline-tb_class_year {
+            padding-top: 0 !important;
+
+            &::before {
+                content: "Class Of ";
+            }
+        }
+
+        & .um-member-metaline-user_email {
+            margin-top: $spacing-small;
+        }
+
+        & .um-member-card,
+        & .um-member-photo {
+            flex-basis: 100%;
+        }
+
+        & .um-member-metaline {
+            padding-top: $spacing-xsmall !important;
+        }
+
+        & .um-members-edit-btn {
+            display: none;
+        }
+
         @media (min-width: $breakpoint-width-small) {
             flex-basis: 32%;
         }
@@ -32,24 +71,6 @@
         @media (min-width: $breakpoint-width-medium) {
             flex-basis: 19%;
         }
-    }
-
-    & .um-member-card ,
-    & .um-member-photo {
-        flex-basis: 100%;
-    }
-
-    & .um-member-meta {
-        margin-top: $spacing-xsmall !important;
-        padding-top: 0 !important;
-    }
-
-    & .um-member-metaline {
-        padding-top: $spacing-xsmall !important;
-    }
-
-    & .um-members-edit-btn {
-        display: none;
     }
 }
 
@@ -81,7 +102,7 @@
 }
 
 .um-members-wrapper {
-    flex-wrap: wrap !important; 
+    flex-wrap: wrap !important;
 
     & .um-member {
         margin-top: 1.5rem;
