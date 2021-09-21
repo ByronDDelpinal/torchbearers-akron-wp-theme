@@ -108,6 +108,14 @@
         }
     }
 
+    & .custom-logo-link {
+        max-height: 50px;
+        max-width: 50px;
+        left: 10px;
+        position: absolute;
+        top: 6px;
+    }
+
     & .mobile-nav {
         position: absolute;
         z-index: 100;

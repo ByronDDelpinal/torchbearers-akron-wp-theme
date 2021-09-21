@@ -44,6 +44,9 @@
 	</header><!-- #masthead -->
 
 	<header class="site-header-mobile">
+		<div class="site-branding">
+			<?php the_custom_logo(); ?>
+		</div><!-- .site-branding -->
 		<a href="#" class="mobile-nav__trigger"><span class="nav__icon"></span></a>
 		<nav class="mobile-nav">
 			<?php
