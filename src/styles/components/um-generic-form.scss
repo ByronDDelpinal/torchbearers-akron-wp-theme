@@ -46,6 +46,10 @@ div.um.um-register {
         }
     }
 
+    & .um-profile-photo a.um-profile-photo-img {
+        top: 0 !important;
+    }
+
     & .um-main-meta ~ .um-meta-text {
         display: none;
     }
