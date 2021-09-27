@@ -23,8 +23,7 @@
 .custom-logo-link {
     background-color: transparent !important;
     display: block;
-    max-height: 70px;
-    max-width: 70px;
+    max-width: 250px;
 
     &:hover {
         background-color: transparent;
@@ -109,11 +108,10 @@
     }
 
     & .custom-logo-link {
-        max-height: 50px;
-        max-width: 50px;
+        max-width: 250px;
         left: 10px;
         position: absolute;
-        top: 6px;
+        top: 7px;
     }
 
     & .mobile-nav {
