@@ -15,6 +15,22 @@ div.um.um-register {
         border-width: 0;
     }
 
+    & .um-profile-headericon a {
+        color: $color-primary;
+
+        &:hover {
+            color: $color-secondary;
+        }
+    }
+
+    & .um-profile-edit .um-profile-edit-a::before {
+        content: 'Edit';
+        font-size: 0.5em;
+        line-height: 2;
+        margin-right: $spacing-small;
+        vertical-align: middle;
+    }
+
     & .um-form {
         width: 100%;
     }
