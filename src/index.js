@@ -1,5 +1,6 @@
 import './index.scss'
 
+/* Navigation Trigger */
 const navTrigger = document.querySelector('.mobile-nav__trigger');
 
 if (navTrigger) {

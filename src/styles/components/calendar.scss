@@ -45,3 +45,10 @@
         }
     }
 }
+
+/*
+ * This hides the "Opt Out" option when RSVPing for events
+*/
+.tribe-tickets__rsvp-actions-success-going-toggle {
+    display: none !important;
+}

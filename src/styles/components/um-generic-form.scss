@@ -53,4 +53,9 @@ div.um.um-register {
     & .um-main-meta ~ .um-meta-text {
         display: none;
     }
+
+    & .um-postmessage {
+        margin-top: $spacing-large;
+        text-align: center;
+    }
 }
