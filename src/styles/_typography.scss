@@ -41,3 +41,10 @@ p {
     font-size: $fontsize-xsmall;
     line-height: 1.5;
 }
+
+/* Specific to the Apply page */
+.page-id-1923 {
+    & .wp-block-cover.has-brand-primary-dark-background-color h2 {
+        margin: 0;
+    }
+}
