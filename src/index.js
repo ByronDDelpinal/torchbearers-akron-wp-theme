@@ -13,3 +13,17 @@ if (navTrigger) {
         }
     })
 }
+
+/* Attendee List */
+const attendeeListElements = document.querySelectorAll('.tribe-attendees-list > .tribe-attendees-list-item');
+
+if (attendeeListElements) {
+    attendeeListElements.forEach(attendeeListElement => {
+        const attendeeName = attendeeListElement.querySelector('img').alt;
+        const newNameElement = document.createElement('p');
+
+        newNameElement.innerHTML = attendeeName;
+
+        attendeeListElement.appendChild(newNameElement);
+    });
+}
