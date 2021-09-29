@@ -1,0 +1,9 @@
+.campaign {
+    & .campaign-summary {
+        display: none;
+    }
+
+    & .donation-amount {
+        width: 100% !important;
+    }
+}

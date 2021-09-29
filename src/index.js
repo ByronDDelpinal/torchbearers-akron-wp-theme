@@ -27,3 +27,17 @@ if (attendeeListElements) {
         attendeeListElement.appendChild(newNameElement);
     });
 }
+
+/* Charitable Payment */
+const paymentHeader = document.querySelector('.charitable-form-header');
+const paymentButton = document.querySelector('.single-campaign button[name="donate"]');
+
+if (paymentHeader) {
+    paymentHeader.innerHTML = "Payment Amount";
+}
+
+console.log(paymentButton)
+
+if (paymentButton) {
+    paymentButton.innerHTML = "Pay Now";
+}

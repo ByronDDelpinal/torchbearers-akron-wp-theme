@@ -1,3 +1,4 @@
+div.um.um-account,
 div.um.um-login,
 div.um.um-password,
 div.um.um-profile,
@@ -26,12 +27,63 @@ div.um.um-register {
         margin-top: $spacing-medium;
     }
 
+    & .um-account-side, 
+    & .um-account-main {
+        margin-top: $spacing-medium;
+    }
+
+    & .um-account-name > a,
+    & .um-account-profile-link > a {
+        color: $color-primary;
+
+        &:hover {
+            color: $color-secondary;
+        }
+    }
+
+    & .um-field-radio.active i {
+        color: $color-primary !important;
+    }
+
+    & .um-request-button {
+        @include button-visuals;
+    }
+
+    & .um-account-link {
+        background-color: $color-primary;
+        color: $color-white !important;
+
+        &:hover {
+            background-color: $color-secondary;
+
+            & .um-account-icon,
+            & .um-account-title,
+            & .um-account-arrow {
+                color: white !important;
+            }
+        }
+
+        &.current {
+            background-color: $color-secondary;
+        }
+
+        & .um-account-icon,
+        & .um-account-title,
+        & .um-account-arrow {
+            color: white !important;
+
+            &:hover {
+                color: white !important;
+            }
+        }
+    }
+
     & .um-field-block[data-key="um_block_2070_18"] {
         font-size: $fontsize-small;
         font-style: italic;
     }
 
-    & input.um-button[type='submit'],
+    & input.um-button[type="submit"],
     & #um-submit-btn {
         @include button-visuals;
     }
@@ -40,7 +92,8 @@ div.um.um-register {
         @include button-visuals-inverted;
     }
 
-    & .um-profile-headericon a:hover, .um-profile.um .um-profile-edit-a.active {
+    & .um-profile-headericon a:hover,
+    .um-profile.um .um-profile-edit-a.active {
         &:hover {
             color: $color-primary;
         }
