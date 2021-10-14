@@ -192,6 +192,21 @@ function torchbearers_widgets_init() {
 }
 add_action( 'widgets_init', 'torchbearers_widgets_init' );
 
+function register_widget_areas() {
+
+	register_sidebar( array(
+	  'name'          => 'Footer widget',
+	  'id'            => 'footer_widget',
+	  'description'   => 'This widget is for the footer',
+	  'before_widget' => '<section class="footer-widget">',
+	  'after_widget'  => '</section>',
+	  'before_title'  => '<h4>',
+	  'after_title'   => '</h4>',
+	));
+  }
+  
+  add_action( 'widgets_init', 'register_widget_areas' );
+
 /**
  * Enqueue scripts and styles.
  */

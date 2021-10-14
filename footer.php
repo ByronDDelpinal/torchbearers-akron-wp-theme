@@ -15,6 +15,8 @@
 		<div class="site-info">
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'torchbearers' ) ); ?>">
 		</div><!-- .site-info -->
+		<?php dynamic_sidebar( 'footer_widget' ); ?>
+
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
