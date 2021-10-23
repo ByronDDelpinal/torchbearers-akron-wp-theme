@@ -96,6 +96,15 @@ if ( ! function_exists( 'torchbearers_setup' ) ) :
 endif;
 add_action( 'after_setup_theme', 'torchbearers_setup' );
 
+// Method to redirect to referrer if it's set
+add_action("um_after_login_fields", function(){
+    if( isset( $_SERVER['HTTP_REFERER'] ) && !isset( $_REQUEST['redirect_to'] ) ){
+        echo "<input type='hidden' name='redirect_to' value='".esc_attr( $_SERVER['HTTP_REFERER'] )."'>";
+    } else {
+		echo "<input type='hidden' name='redirect_to' value='".esc_attr( '/' )."'>";
+	}
+});
+
 // Adds support for editor color palette.
 add_theme_support( 'editor-color-palette', array(
 	array(
