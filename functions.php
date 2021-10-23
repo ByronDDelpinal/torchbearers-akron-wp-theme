@@ -195,14 +195,34 @@ add_action( 'widgets_init', 'torchbearers_widgets_init' );
 function register_widget_areas() {
 
 	register_sidebar( array(
-	  'name'          => 'Footer widget',
-	  'id'            => 'footer_widget',
-	  'description'   => 'This widget is for the footer',
-	  'before_widget' => '<section class="footer-widget">',
+	  'name'          => 'Footer Widget Left',
+	  'id'            => 'footer_widget_1',
+	  'description'   => 'This widget is for the footer in the left-most column',
+	  'before_widget' => '<section class="footer-widget left">',
 	  'after_widget'  => '</section>',
 	  'before_title'  => '<h4>',
 	  'after_title'   => '</h4>',
 	));
+
+	register_sidebar( array(
+		'name'          => 'Footer Widget Middle',
+		'id'            => 'footer_widget_2',
+		'description'   => 'This widget is for the footer in the middle column',
+		'before_widget' => '<section class="footer-widget middle">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h4>',
+		'after_title'   => '</h4>',
+	  ));
+
+	  register_sidebar( array(
+		'name'          => 'Footer Widget Right',
+		'id'            => 'footer_widget_3',
+		'description'   => 'This widget is for the footer in the right-most column',
+		'before_widget' => '<section class="footer-widget right">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h4>',
+		'after_title'   => '</h4>',
+	  ));
   }
   
   add_action( 'widgets_init', 'register_widget_areas' );
