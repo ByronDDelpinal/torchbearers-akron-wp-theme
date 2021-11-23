@@ -36,8 +36,13 @@ if (paymentHeader) {
     paymentHeader.innerHTML = "Payment Amount";
 }
 
-console.log(paymentButton)
-
 if (paymentButton) {
     paymentButton.innerHTML = "Pay Now";
+}
+
+/* Events RSVP Login Message */
+const loginElement = document.querySelector('.tribe-events-pg-template .tribe-tickets__rsvp-message-text  a');
+
+if (loginElement) {
+    loginElement.setAttribute('href',  window.location.host + '/login/?referrer=' + window.location);
 }
