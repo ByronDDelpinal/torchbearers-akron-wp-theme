@@ -1,4 +1,5 @@
 .site-footer {
+    background-color: $color-gray-dark;
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -6,13 +7,21 @@
     & .footer-widget,
     & .wp-block-social-links {
         align-items: center;
-        flex-basis: 100%;
         display: flex;
+        flex-basis: 100%;
         flex-wrap: nowrap;
         justify-content: center;
 
         &.middle {
             margin: $spacing-medium 0;
+        }
+
+        & > li.wp-social-link {
+            background-color: $color-gray-dark !important;
+        }
+
+        & p {
+            color: $color-white;
         }
     }
 
