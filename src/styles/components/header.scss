@@ -46,9 +46,13 @@
             list-style-type: none;
             margin-right: $spacing-small;
 
-            & a {
+            &#menu-item-2123 > a{
+                @include button-visuals;
+            }
+
+            & > a {
                 background-color: $color-white;
-                color: $color-secondary;
+                color: $color-primary;
                 padding: $spacing-xsmall $spacing-small;
                 text-decoration: none;
                 text-transform: uppercase;
@@ -58,8 +62,10 @@
                 }
 
                 &:visited {
-                    color: $color-secondary;
+                    color: $color-primary;
                 }
+
+                
             }
         }
     }
