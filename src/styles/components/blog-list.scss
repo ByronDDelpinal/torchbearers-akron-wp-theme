@@ -1,0 +1,38 @@
+#post-5981 {
+    & .wp-block-post-template {
+        & > li {
+            border-bottom: $color-primary;
+            border-bottom-style: solid;
+            border-bottom-width: 7px;
+            margin-bottom: $spacing-small;
+            padding-bottom: $spacing-medium;
+        }
+    }
+
+    & .wp-block-post-title {
+        font-size: $fontsize-medium;
+
+        & > a {
+            color: $color-primary;
+        }
+    }
+
+    & .wp-block-post-date {
+        color: $color-gray;
+        font-size: $fontsize-xxsmall;
+        margin-bottom: $spacing-small;
+        text-transform: uppercase;
+    }
+
+    & .wp-block-post-excerpt__more-text > a {
+        @include button-visuals;
+        border-radius: 2px !important;
+        margin-top: $spacing-medium;
+        padding: $spacing-small $spacing-medium;
+        text-transform: uppercase;
+    }
+
+    & .wp-block-separator {
+        display: none;
+    }
+}

@@ -11,25 +11,20 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<?php
-		if ( is_singular() ) :
-			the_title( '<h1 class="entry-title">', '</h1>' );
-		else :
+		<?php if ( is_singular() ) : ?>
+			<?php torchbearers_post_thumbnail(); ?>
+			<div class="header-overlay-content">
+				<?php the_title( '<h1 class="entry-title">', '</h1>' );
+				if ( 'post' === get_post_type() ) :
+					torchbearers_posted_on();
+				endif; 
+				?>
+			</div>
+		<?php else :
 			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 		endif;
-
-		if ( 'post' === get_post_type() ) :
-			?>
-			<div class="entry-meta">
-				<?php
-				torchbearers_posted_on();
-				torchbearers_posted_by();
-				?>
-			</div><!-- .entry-meta -->
-		<?php endif; ?>
+		?>
 	</header><!-- .entry-header -->
-
-	<?php torchbearers_post_thumbnail(); ?>
 
 	<div class="entry-content">
 		<?php
@@ -47,17 +42,10 @@
 				wp_kses_post( get_the_title() )
 			)
 		);
-
-		wp_link_pages(
-			array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'torchbearers' ),
-				'after'  => '</div>',
-			)
-		);
 		?>
 	</div><!-- .entry-content -->
 
-	<footer class="entry-footer">
+	<!-- <footer class="entry-footer">
 		<?php torchbearers_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
+	</footer> -->
 </article><!-- #post-<?php the_ID(); ?> -->

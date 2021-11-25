@@ -1,0 +1,38 @@
+.post-template-default {
+    & .site-header {
+        z-index: 1000;
+    }
+
+    & .entry-header {
+        margin-bottom: $spacing-medium;
+        position: relative;
+        width: 100%;
+    }
+
+    & .entry-title {
+        margin: 0;
+    }
+
+    & .header-overlay-content {
+        background: $color-gray-dark;
+        color: $color-white;
+        left: 50%;
+        opacity: 0.93;
+        padding: $spacing-large;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 45%;
+    }
+
+    & .posted-on {
+        & .updated {
+            display: none;
+        }
+    }
+
+    & .post-thumbnail > img {
+        height: auto;
+        width: 100%;
+    }
+}

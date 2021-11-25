@@ -5,9 +5,13 @@
 @import "./styles/typography";
 @import "./styles/wordpress-classes";
 
-/******** Components / Blocks ********/
-@import "./styles/components/board-of-directors-list";
+/******** Dependencies ********/
 @import "./styles/components/button";
+
+/******** Components / Blocks ********/
+@import "./styles/components/blog-list.scss";
+@import "./styles/components/blog-single/index";
+@import "./styles/components/board-of-directors-list";
 @import "./styles/components/calendar";
 @import "./styles/components/diagonal-block-cover";
 @import "./styles/components/donation-campaign.scss";

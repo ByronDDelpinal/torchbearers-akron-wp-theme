@@ -1,0 +1,9 @@
+.post-template-default .entry-content {
+    & p {
+        margin-bottom: $spacing-medium;
+    }
+
+    & .post-navigation {
+        display: none;
+    }
+}
