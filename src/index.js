@@ -44,5 +44,5 @@ if (paymentButton) {
 const loginElement = document.querySelector('.tribe-events-pg-template .tribe-tickets__rsvp-message-text  a');
 
 if (loginElement) {
-    loginElement.setAttribute('href',  window.location.host + '/login/?referrer=' + window.location);
+    loginElement.setAttribute('href',  `${window.location.protocol}//${window.location.host}/login?referrer=${window.location}`);
 }
