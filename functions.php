@@ -167,6 +167,11 @@ add_theme_support( 'editor-color-palette', array(
 		'slug'  => 'brand-gray-dark',
 		'color' => '#666868',
     ),
+	array(
+		'name'  => __( 'Brand White', 'torchbearers' ),
+		'slug'  => 'brand-white',
+		'color' => '#ffffff',
+    ),
 ) );
 
 /**

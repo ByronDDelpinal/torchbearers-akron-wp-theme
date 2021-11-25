@@ -58,6 +58,11 @@
     color: $color-gray-dark;
 }
 
+.has-brand-white-color,
+.has-brand-white-color > * {
+    color: $color-white;
+}
+
 .has-brand-primary-background-color,
 .has-brand-primary-background-color > * {
     background-color: $color-primary;
@@ -116,4 +121,9 @@
 .has-brand-gray-dark-background-color,
 .has-brand-gray-dark-background-color > * {
     background-color: $color-gray-dark;
+}
+
+.has-brand-white-background-color,
+.has-brand-white-background-color > * {
+    background-color: $color-white;
 }
