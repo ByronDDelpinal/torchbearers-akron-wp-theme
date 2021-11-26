@@ -1,0 +1,14 @@
+#post-1921 {
+    & .um-directory {
+        margin-bottom: 0 !important;
+    }
+
+    & .um-member-directory-header,
+    & .um-members-pagination-box {
+        display: none;
+    }
+
+    & .um-member-photo{
+        padding-top: $spacing-small;
+    }
+}
