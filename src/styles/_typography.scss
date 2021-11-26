@@ -14,25 +14,44 @@ h6 {
 }
 
 h1 {
-    font-size: $fontsize-xxlarge;
-    margin: $spacing-large 0 $spacing-medium 0;
+    font-size: $fontsize-large;
+    margin: $spacing-medium 0 $spacing-small 0;
+
+    @media (min-width: $breakpoint-width-large) {
+        font-size: $fontsize-xxlarge;
+        margin: $spacing-large 0 $spacing-medium 0;
+    }
 }
 
 h2 {
-    font-size: $fontsize-xlarge;
-    margin: $spacing-medium 0 $spacing-small 0;
+    font-size: $fontsize-large;
+    margin: $spacing-small 0;
+
+    @media (min-width: $breakpoint-width-large) {
+        font-size: $fontsize-xlarge;
+        margin: $spacing-medium 0 $spacing-small 0;
+    }
 }
 
 h3 {
-    font-size: $fontsize-large;
-    margin: $spacing-medium 0;
+    font-size: $fontsize-medium;
+    margin: $spacing-small 0;
+
+    @media (min-width: $breakpoint-width-large) {
+        font-size: $fontsize-large;
+        margin: $spacing-medium 0;
+    }
 }
 
 h4,
 h5,
 h6 {
     font-size: $fontsize-medium;
-    margin: $spacing-medium 0;
+    margin: $spacing-small 0;
+
+    @media (min-width: $breakpoint-width-large) {
+        font-size: $fontsize-medium;
+    }
 }
 
 li,

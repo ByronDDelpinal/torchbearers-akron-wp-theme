@@ -1,4 +1,16 @@
 .single-campaign-template {
+    & p {
+        margin-bottom: $spacing-small;
+    }
+
+    & li {
+        list-style-type: circle;
+    }
+
+    & ul {
+        margin: 0 $spacing-large;
+    }
+
     & .entry-header {
         background-color: $color-primary-dark;
         padding: 0;
