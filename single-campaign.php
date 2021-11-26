@@ -14,16 +14,13 @@ get_header();
 
 		<?php
 		while ( have_posts() ) :
-			the_post();
+			the_post();?>
+			
+			<div class="single-campaign-template">
+				<?php get_template_part( 'template-parts/content', get_post_type() ); ?>
+			</div>
+			<?php
 
-			get_template_part( 'template-parts/content', get_post_type() );
-
-			the_post_navigation(
-				array(
-					'prev_text' => '<span class="nav-subtitle">' . esc_html__( 'Previous:', 'torchbearers' ) . '</span> <span class="nav-title">%title</span>',
-					'next_text' => '<span class="nav-subtitle">' . esc_html__( 'Next:', 'torchbearers' ) . '</span> <span class="nav-title">%title</span>',
-				)
-			);
 
 			// If comments are open or we have at least one comment, load up the comment template.
 			if ( comments_open() || get_comments_number() ) :

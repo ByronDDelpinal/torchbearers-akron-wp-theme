@@ -1,0 +1,13 @@
+.single-campaign-template {
+    & .entry-header {
+        background-color: $color-primary-dark;
+        padding: 0;
+    }
+
+    & .entry-title {
+        color: $color-white;
+        margin: 0;
+        padding: $spacing-medium 0;
+        text-align: center;
+    }
+}

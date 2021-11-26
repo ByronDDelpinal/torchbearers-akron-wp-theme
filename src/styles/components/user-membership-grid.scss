@@ -100,8 +100,13 @@
         flex-basis: 1;
     }
 
-    & .um-search-line {
-        height: 50px !important;
+    & input[type=search].um-search-line {
+        height: 49px !important;
+
+        @media (min-width: $breakpoint-width-large) {
+            margin-left: auto !important;
+            width: 50% !important;
+        }
     }
 }
 

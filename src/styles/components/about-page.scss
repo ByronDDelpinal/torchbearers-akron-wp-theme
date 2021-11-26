@@ -8,7 +8,15 @@
         display: none;
     }
 
-    & .um-member-photo{
+    & .um-member {
+        border: none;
+    }
+
+    & .um-member-photo {
         padding-top: $spacing-small;
+    }
+
+    & .um-members-edit-btn {
+        display: none;
     }
 }

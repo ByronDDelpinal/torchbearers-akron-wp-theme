@@ -1,40 +1,5 @@
-#tribe-events-content {
-    /* Establishing base fonts */
-    & * {
-        font-family: "Roboto Slab", serif !important;
-    }
-
-    /*  Back to the main calendar button */
-    & .tribe-events-back > a {
-        background-color: transparent;
-        color: $color-primary;
-
-        &:hover {
-            color: $color-secondary;
-        }
-    }
-
-    /* Add to personal calendar links */
-    & .tribe-events-cal-links > a.tribe-events-button {
-        color: $color-primary;
-    }
-
-    /* Who's attending list */
-    & .tribe-attendees-list {
-        margin: $spacing-medium 0;
-    }
-
-    /* Venue Google Map link */
-    & .tribe-events-meta-group a.tribe-events-gmap {
-        color: $color-white;
-
-        &:hover {
-            color: $color-secondary;
-        }
-    }
-
-    /* RSVP going button */
-    & .tribe-tickets__rsvp-actions-rsvp-going button.tribe-common-c-btn {
-        @include button-visuals;
+.post-type-archive-tribe_events {
+    & .tribe-events-l-container {
+        padding-top: $spacing-medium !important;
     }
 }
