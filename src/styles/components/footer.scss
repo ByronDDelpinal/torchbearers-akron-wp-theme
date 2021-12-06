@@ -2,6 +2,7 @@
     background-color: $color-gray-dark;
     display: flex;
     flex-wrap: wrap;
+    padding-top: $spacing-small;
     width: 100%;
 
     & .footer-widget,
@@ -13,7 +14,7 @@
         justify-content: center;
 
         &.middle {
-            margin: $spacing-medium 0;
+            margin: $spacing-small 0;
         }
 
         & > li.wp-social-link {
@@ -28,6 +29,7 @@
     @media (min-width: $breakpoint-width-medium) {
         flex-wrap: nowrap;
         justify-content: space-between;
+        padding-top: 0;
 
         & .footer-widget {
             flex-basis: 32%;
@@ -43,6 +45,7 @@
     }
 
     @media (min-width: $max-page-width) {
+        box-sizing: content-box;
         width: $max-page-width;
 
         padding-left: calc((100vw - #{$max-page-width}) / 2) !important;

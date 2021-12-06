@@ -40,7 +40,7 @@ if (paymentButton) {
     paymentButton.innerHTML = "Pay Now";
 }
 
-/* Events RSVP Login Message */
+/* Events RSVP Login Button Redirect */
 const loginElement = document.querySelector('.tribe-events-pg-template .tribe-tickets__rsvp-message-text  a');
 
 if (loginElement) {

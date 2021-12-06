@@ -46,7 +46,8 @@
             list-style-type: none;
             margin-right: $spacing-small;
 
-            &#menu-item-2123 > a{
+            &#menu-item-2123 > a ,
+            &#menu-item-2125 > a {
                 @include button-visuals;
             }
 

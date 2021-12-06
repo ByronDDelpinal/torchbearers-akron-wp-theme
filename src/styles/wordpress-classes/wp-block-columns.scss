@@ -1,0 +1,13 @@
+.wp-block-columns {
+    > .wp-block-column {
+        margin-bottom: $spacing-medium;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        @media (min-width: $breakpoint-width-medium) {
+            margin-bottom: 0;
+        }
+    }
+}

@@ -3,3 +3,11 @@
     margin-bottom: $spacing-medium;
     margin-top: $spacing-medium;
 }
+
+/* Impact Page */
+.page-id-1925 .entry-content > .wp-block-cover:first-child h2 ,
+/* Apply Page */
+.page-id-1923 .entry-content > .wp-block-cover:first-child h2 {
+    
+    margin-top: 0;
+}

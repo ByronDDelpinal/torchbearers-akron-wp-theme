@@ -14,6 +14,22 @@
         }
     }
 
+    & .tribe-common-g-row--gutters {
+        padding: $spacing-medium;
+    }
+
+    & .tribe-tickets__rsvp-wrapper {
+        margin: $spacing-small 0;
+
+        & .tribe-common-b3--min-medium {
+            display: none;
+        }
+    }
+
+    & .tribe-link-view-attendee {
+        padding-top: $spacing-medium;
+    }
+
     /* Add to personal calendar links */
     & .tribe-events-cal-links > a.tribe-events-button {
         color: $color-primary;
@@ -22,6 +38,11 @@
     /* Who's attending list */
     & .tribe-attendees-list {
         margin: $spacing-medium 0;
+    }
+
+    /* The image of who is attending an event */
+    & .tribe-attendees-list-shown > img {
+        border-radius: 50%;
     }
 
     /* Venue Google Map link */

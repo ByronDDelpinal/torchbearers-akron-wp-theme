@@ -15,12 +15,13 @@
     }
 
     & .entry-title {
+        line-height: 1.25;
         margin: 0;
     }
 
     & .header-overlay-content {
         align-items: center;
-        background: $color-gray-dark;
+        background: rgba($color-gray, .8);
         bottom: 0;
         box-sizing: border-box;
         color: $color-white;
@@ -28,7 +29,6 @@
         flex-wrap: wrap;
         justify-content: center;
         left: 0;
-        opacity: 0.93;
         padding: $spacing-small;
         position: absolute;
         right: 0;
@@ -39,7 +39,7 @@
         @media (min-width: $breakpoint-width-medium) {
             bottom: initial;
             left: 50%;
-            padding: $spacing-medium;
+            padding: $spacing-large;
             right: initial;
             text-align: left;
             top: 50%;
@@ -47,7 +47,7 @@
             width: 45%;
 
             & .posted-on {
-                margin: 0 auto 0 0;
+                margin: 0 auto;
             }
         }
     }
