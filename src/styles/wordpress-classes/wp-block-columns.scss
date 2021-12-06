@@ -6,6 +6,18 @@
             margin-bottom: 0;
         }
 
+        & .wp-block-image {
+            margin: 0;
+        }
+    
+        & img {
+            /* 
+            * When images are put in the width gets changed as they grow and shrink.
+            * This makes sure that the height corresponds with it instead of remaining.
+            */
+            height: auto;
+        }
+
         @media (min-width: $breakpoint-width-medium) {
             margin-bottom: 0;
         }

@@ -10,6 +10,12 @@ strong {
     font-weight: 700;
 }
 
+#page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 .entry-header,
 .entry-content > * {
     /*
@@ -34,20 +40,6 @@ strong {
      * of what the element is. This would put an awkward space between it and the header.
     */
     margin-top: 0 !important;
-}
-
-.wp-block-columns {
-    & .wp-block-image {
-        margin: 0;
-    }
-
-    & img {
-        /* 
-        * When images are put in the width gets changed as they grow and shrink.
-        * This makes sure that the height corresponds with it instead of remaining.
-        */
-        height: auto;
-    }
 }
 
 .wp-block-image {
