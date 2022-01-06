@@ -1,9 +1,15 @@
 .tribe-attendees-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
     & .tribe-attendees-list-item {
+        align-items: center;
         display: flex;
+        flex-basis: 33%;
         flex-wrap: wrap;
         justify-content: center;
-        align-items: center;
+        margin-top: $spacing-medium;
 
         & img {
             margin: 0 auto;
@@ -12,6 +18,26 @@
         & p {
             flex-basis: 100%;
             text-align: center;
+        }
+
+        & .tribe-attendees-list-shown {
+            margin-bottom: 0;
+        }
+
+        & .tribe-attendees-list-hidden {
+            display: block;
+        }
+
+        @media (min-width: $breakpoint-width-medium) {
+            flex-basis: 25%;
+        }
+
+        @media (min-width: $breakpoint-width-large) {
+            flex-basis: 20%;
+        }
+
+        @media (min-width: $max-page-width) {
+            flex-basis: 16%;
         }
     }
 }

@@ -14,12 +14,28 @@
         }
     }
 
+    & .tribe-tickets__rsvp-attendance {
+        margin-top: $spacing-small !important;
+    }
+
+    & .tribe-tickets__rsvp-actions {
+        margin-top: $spacing-small;
+        padding-bottom: $spacing-small;
+        padding-top: $spacing-medium;
+    }
+
+    & .tribe-events-event-image > img {
+        height: auto;
+        width: 100%;
+    }
+
     & .tribe-common-g-row--gutters {
         padding: $spacing-medium;
     }
 
     & .tribe-tickets__rsvp-wrapper {
         margin: $spacing-small 0;
+        max-width: 100% !important;
 
         & .tribe-common-b3--min-medium {
             display: none;
@@ -41,8 +57,18 @@
     }
 
     /* The image of who is attending an event */
-    & .tribe-attendees-list-shown > img {
+    & .tribe-attendees-list-shown > img,
+    & .tribe-attendees-list-hidden > img {
         border-radius: 50%;
+    }
+
+    /* The "Load All Attendees" Button */
+    & .tribe-attendees-list-showall {
+        display: none !important;
+
+        & + p {
+            display: none !important;
+        }
     }
 
     /* Venue Google Map link */

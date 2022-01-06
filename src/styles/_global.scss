@@ -17,7 +17,8 @@ strong {
 }
 
 .entry-header,
-.entry-content > * {
+.entry-content > *,
+#tribe-events-pg-template {
     /*
      * After the max page width has been hit, start to add padding to each side of
      * every direct child in the entry content section equal to the current page size
