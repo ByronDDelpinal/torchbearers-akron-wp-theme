@@ -270,7 +270,7 @@ function torchbearers_scripts() {
 add_action( 'wp_enqueue_scripts', 'torchbearers_scripts' );
 
 function torchbearers_admin_scripts() {
-	wp_enqueue_script('torchbearers-admin', get_template_directory_uri() . '/build/admin.js');
+	wp_enqueue_script('torchbearers-admin', get_template_directory_uri() . '/src/admin.js');
 }
 add_action( 'admin_enqueue_scripts', 'torchbearers_admin_scripts');
 
