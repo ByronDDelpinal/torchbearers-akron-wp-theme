@@ -255,8 +255,8 @@ function torchbearers_scripts() {
 	// If the file can be found, use it to set the dependencies array.
 	if ( file_exists( $deps_file ) ) {
 		$deps_file = require( $deps_file );
-		$deps      = $file['dependencies'];
-		$version   = $file['version'];
+		$deps      = $deps_file['dependencies'];
+		$version   = $deps_file['version'];
 	}
 
 	wp_enqueue_style( 'torchbearers-style', get_template_directory_uri() . '/build/index.css', array(), $version );
@@ -296,4 +296,4 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
-include('ultimate-member/um_data_shortcode.php');
+include('um_data_shortcode.php');
